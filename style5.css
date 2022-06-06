@@ -1,0 +1,144 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+
+html{
+	scroll-behavior: smooth;
+}
+
+body
+{
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto Slab", sans-serif;
+}
+
+nav
+{
+	display: flex; /* permet d'aligner les items */
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 5px solid #6f6f6f;
+}
+
+nav h1
+{
+	color: #717171 ;
+	font-family: "Playfair Display", sans-serif;
+	font-size: 30px;
+}
+
+nav .onglets
+{
+	margin-top: 3px; /* marge pour aligner mes onglets */
+	margin-left: 500px; /* marge pour éloigner titre de mon site avec onglets */
+
+}
+
+nav .onglets a
+{
+	text-decoration: none; /* enlève le soulignement du texte */
+	color: #000;
+	margin-right: 10px; /* espace entre chaque lien */
+	
+}
+
+@media screen and (max-width: 680px)   /* pour adapter taille de mes onglets sur mobile, avoir un visuel adapté, max width correspond taille d'écran */
+{
+	nav .onglets
+	{
+		margin-left: 15px;
+		margin-bottom: 20px;
+	}
+
+	.main .quebec{
+		margin: 10px;
+	}
+
+	.main .content .quebec .img{
+		height: 200px;
+		width: 100%;
+	}
+
+	.main .content .quebec{
+		display: block;
+	}
+
+	footer{
+		padding: 30px;
+	}
+}
+
+#imageprincipale
+{
+	padding-top: 20px;
+	background: url(media/montreal.jpg) no-repeat fixed 100% 100%;
+	background-size: cover;
+	height: 599px;
+	text-align: center;
+	font-size: 40px;  /* taille de la police */
+	color: white;
+	font-family: "Playfair Display", sans-serif;
+	text-shadow: 2px 2px black;
+	
+}
+
+.main .content{
+	margin-top: 40px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.main .content .quebec .right .img{
+	height: 300px;
+	width: 400px;
+}
+
+.main .content .quebec .left{
+	flex: 0 0 100%;
+	padding: 20px;
+	background-color: grey;
+}
+
+.main .content .quebec.right{ /*permet de placer l'image à droite du texte */
+	flex: 0 0 70%;
+}
+
+.main .content .quebec{
+	display: flex;  /* aligner texte et photo */
+	flex-wrap: wrap; /* si résolution ne permet pas, empile photo et texte */
+	justify-content: center;  /* centrer les éléments */
+	margin-bottom: 20px;  /*espacer les 2 textes */
+
+}
+
+footer{
+	margin-top: 40px;
+	border-top: 5px solid #6f6f6f;
+	background-color: grey;
+	padding: 30px 100px;
+
+}
+
+footer h1{
+	font-family: "Playfair Display", sans-serif;
+}
+
+footer .contacts{
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+footer .contacts .contact{
+	margin-right: 80px; /* espacer mes éléments du footer */
+
+}
+
+#maj {
+	text-align: right;
+}
+
+
